@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-white text-gray-800 antialiased;
+  }
+
+  ::selection {
+    @apply bg-primary-500/20 text-primary-700;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-white/80 backdrop-blur-xl border border-gray-100 rounded-2xl shadow-lg shadow-gray-200/50;
+  }
+  
+  .glass-card-dark {
+    @apply bg-gray-900/90 backdrop-blur-xl border border-gray-800 rounded-2xl;
+  }
+  
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary-600 via-primary-500 to-accent-500 bg-clip-text text-transparent;
+  }
+  
+  .btn-primary {
+    @apply px-8 py-4 bg-gradient-to-r from-primary-600 to-primary-500 text-white font-semibold rounded-full 
+           hover:from-primary-500 hover:to-primary-400 transform hover:scale-105 
+           transition-all duration-300 shadow-lg shadow-primary-500/30;
+  }
+  
+  .btn-secondary {
+    @apply px-8 py-4 border-2 border-primary-500 text-primary-600 font-semibold rounded-full 
+           hover:bg-primary-50 transform hover:scale-105 
+           transition-all duration-300;
+  }
+  
+  .section-padding {
+    @apply py-24 px-4 md:px-8 lg:px-16;
+  }
+  
+  .container-custom {
+    @apply max-w-7xl mx-auto;
+  }
+
+  .input-field {
+    @apply w-full px-5 py-4 bg-gray-50 border border-gray-200 rounded-xl 
+           text-gray-800 placeholder-gray-400 focus:outline-none focus:border-primary-500 
+           focus:ring-2 focus:ring-primary-500/20 transition-all duration-300;
+  }
+  
+  .input-field-dark {
+    @apply w-full px-5 py-4 bg-white/10 border border-white/20 rounded-xl 
+           text-white placeholder-white/50 focus:outline-none focus:border-primary-400 
+           focus:ring-2 focus:ring-primary-400/20 transition-all duration-300;
+  }
+}
+
+@layer utilities {
+  .animate-delay-100 { animation-delay: 100ms; }
+  .animate-delay-200 { animation-delay: 200ms; }
+  .animate-delay-300 { animation-delay: 300ms; }
+  .animate-delay-400 { animation-delay: 400ms; }
+  .animate-delay-500 { animation-delay: 500ms; }
+  .animate-delay-600 { animation-delay: 600ms; }
+  .animate-delay-700 { animation-delay: 700ms; }
+  .animate-delay-800 { animation-delay: 800ms; }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-primary-400 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-primary-500;
+}
+
+/* Light gradient backgrounds */
+.bg-mesh-light {
+  background: linear-gradient(135deg, #ffffff 0%, #fef2f2 25%, #fff7ed 50%, #fefce8 75%, #ffffff 100%);
+}
+
+.bg-gradient-warm {
+  background: linear-gradient(180deg, #ffffff 0%, #fef2f2 50%, #ffffff 100%);
+}
+
+.bg-gradient-fresh {
+  background: linear-gradient(180deg, #f0fdf4 0%, #ecfeff 50%, #f0f9ff 100%);
+}
+
+/* Hero parallax effect */
+.parallax-bg {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
