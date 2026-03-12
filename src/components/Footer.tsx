@@ -78,7 +78,7 @@ export default function Footer() {
               <div className="space-y-3">
                 <a href="tel:+919514774633" className="flex items-center gap-3 text-gray-400 hover:text-primary-400 transition-colors">
                   <Phone className="w-4 h-4" />
-                  +91 95147 74633
+                  +91 99418 43344
                 </a>
                 <a href="mailto:enquiry@goed.in" className="flex items-center gap-3 text-gray-400 hover:text-primary-400 transition-colors">
                   <Mail className="w-4 h-4" />
