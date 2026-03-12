@@ -74,7 +74,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <p className="text-white/60 text-sm">Call us</p>
-                    <p className="text-white font-medium">+91 95147 74633</p>
+                    <p className="text-white font-medium">+91 99418 43344</p>
                   </div>
                 </a>
 
